@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"ed22_ud12_junit04","c":"Robot","l":"getAutonomy()"},{"p":"ed22_ud12_junit04","c":"Robot","l":"Robot(String)","url":"%3Cinit%3E(java.lang.String)"},{"p":"ed22_ud12_junit04","c":"Robot","l":"setAutonomy(double)"}]
