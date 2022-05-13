@@ -22,7 +22,7 @@ class FacturaTest {
 
 	@Test
 	void ProductoTest() {
-		assertEquals(pr0.getPrecio() * pr0.getCantidad(), pr0.precioTotal());
+		assertEquals(pr0.getPrecio() * pr0.getCantidad(), pr0.precioTotal(), 0.2);
 		boolean samename = false;
 		if (pr0.getNombre() == "Patata") {
 			samename = true;
@@ -41,8 +41,8 @@ class FacturaTest {
 		total = total + pr0.precioTotal();
 		total = total + pr1.precioTotal();
 		total = total + pr2.precioTotal();
-		assertEquals(fac.precioTotal(), total);
-		assertEquals(fac.aplicarIva(), total*1.21);
+		assertEquals(fac.precioTotal(), total, 0.2);
+		assertEquals(fac.aplicarIva(), total*1.21, 0.2);
 		
 	}
 
